@@ -31,7 +31,7 @@ namespace Zoopla.Commons
             return new ChromeDriver(options);
         }
 
-        public void LaunchBrowser(string browser)
+        public void LaunchBrowser(string browser) // WHEN WE WANT TO CHOOSE THE BROSWER THEN WE WRITE STRING
         {
             switch (browser)
             {
@@ -51,6 +51,12 @@ namespace Zoopla.Commons
             _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
         }
 
+        public void CloseBrower()
+        {
+            _driver.Manage().Cookies.DeleteAllCookies();
+            _driver.Quit();
+
+        }
     }
    
 

@@ -100,7 +100,7 @@ namespace Zoopla.Features
   testRunner.Given("I navigate to zoopla homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-  testRunner.When(string.Format("I enter a \"{0}\" in the seach text box", location), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When(string.Format("I enter a \"{0}\" in the search text box", location), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
   testRunner.And(string.Format("I select \"{0}\" from minimum price dropdown", minPrice), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

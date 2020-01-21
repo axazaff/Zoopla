@@ -5,7 +5,7 @@
 
   Scenario Outline: Customer can search for any property
   Given I navigate to zoopla homepage
-  When I enter a "<Location>" in the seach text box
+  When I enter a "<Location>" in the search text box
   And I select "<MinPrice>" from minimum price dropdown
   And I select "<MaxPrice>" from maximum price dropdown
   And I select "<Property>" from property type dropdown

@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TechTalk.SpecFlow;
+using Zoopla.Pages;
 
 namespace Zoopla.StepDefinitions
 {
     [Binding]
-    public sealed class ForSaleSearchStep
+    public sealed class ForSaleSearchStep : BasePage
     {
-               [Given(@"I navigate to zoopla homepage")]
+        HomePage homePage = new HomePage(_driver);
+
+
+       [Given(@"I navigate to zoopla homepage")]
         public void GivenINavigateToZooplaHomepage()
         {
-            
+            LaunchURL();
         }
         
-        [When(@"I enter a ""(.*)"" in the seach text box")]
-        public void WhenIEnterAInTheSeachTextBox(string p0)
+        [When(@"I enter a ""(.*)"" in the search text box")]
+        public void WhenIEnterAInTheSeachTextBox(string location)
         {
-
+            homePage.EnterLocation(location);
         }
         
         [When(@"I select ""(.*)"" from minimum price dropdown")]

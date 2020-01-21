@@ -131,7 +131,7 @@ namespace Zoopla.Features
         public virtual void CustomerCanSearchForAnyProperty_Manchester()
         {
 #line 6
-  this.CustomerCanSearchForAnyProperty("Manchester", "£250,000", "£230,000", "Houses", "3+", "Houses", ((string[])(null)));
+  this.CustomerCanSearchForAnyProperty("Manchester", "£250,000", "£230,000", "Houses", "3+", "Property", ((string[])(null)));
 #line hidden
         }
         

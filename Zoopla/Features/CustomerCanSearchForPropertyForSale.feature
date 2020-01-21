@@ -16,7 +16,7 @@
 
   Examples:
     |Location|MinPrice|MaxPrice|Property|Bed|PropertyType|
-    |Manchester|£250,000|£230,000|Houses|3+|Houses       |
+    |Manchester|£250,000|£230,000|Houses|3+|Property       |
      #|London|£120,000|£400,000|Farms/land|No min|Property |
      #|Coventry|£120,000|£230,000|Flats|3+|Flat|
      #|Birmingham|      |        |     |  |      |

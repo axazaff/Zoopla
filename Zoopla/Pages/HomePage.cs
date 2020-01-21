@@ -18,6 +18,12 @@ namespace Zoopla.Pages
         }
         [FindsBy(How = How.Id, Using = "search-input-location")]
         private IWebElement searchField;
+        
+        [FindsBy(How = How.Name, Using = "price_min")]
+        private IWebElement minPrice;
+        [FindsBy(How = How.CssSelector, Using = ".button.button--primary")]
+        private IWebElement submitButton;
+
 
         public void EnterLocation(String location)
         {
@@ -25,5 +31,16 @@ namespace Zoopla.Pages
             searchField.SendKeys(location);
 
         }
+        public void SelectMinimumPrice(String miniPrice)
+        {
+            SelectByText(minPrice, miniPrice);
+
+        }
+        public SearchResultPage ClickOnSearchButton()
+        {
+            submitButton.Click();
+            return new SearchResultPage(_driver);
+        }
+
     }
 }
